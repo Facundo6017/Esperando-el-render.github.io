@@ -8,29 +8,29 @@
 </head>
 <body>
     <div class="wrapper">
-        <header >
+        <header>
             <nav class="navbar">
                 <div class="brand">
                     <img src="media/icon.png" alt="">
                 </div>
                 <ul class="menu">
-                    <li class="active"><a>Inicio</a></li>
-                    <li class="active"><a>Sobre mi</a></li>
+                    <li class="active" ><a href="#inicio">Inicio</a></li>
+                    <li class="active" ><a href="#sobreMi">Sobre mi</a></li>
                     <li class="active"><a>Portafolio</a></li>
                     <li class="active"><a>Contacto</a></li>
                 </ul>
                 <a  onclick="openNav()"  href="#" class="menu-open"><button>Menu</button></a>
             </nav>
                        <div class="overlay" id="mobile-menu">
-                        <a onclick="closeNav()" href="" class="close">&times;</a>
+                        <a onclick="closeNav()" class="close">&times;</a>
                         <div class="overlay-content">
-                            <li class="active"><a>Inicio</a></li>
-                            <li class="active"><a>Sobre mi</a></li>
+                            <li class="active" ><a href="#inicio">Inicio</a></li>
+                            <li class="active" ><a href="#sobreMi">Sobre mi</a></li>
                             <li class="active"><a>Portafolio</a></li>
                             <li class="active"><a>Contacto</a></li>
                         </div>
             </div>
-            <main class="main">
+            <main class="main" id="inicio">
                 <div class="info-content">
                     <h1 class="info-title"><span class="letra1">Esperando</span> el <span class="letra2">Render</span></h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad delectus asperiores aperiam quia laudantium, totam provident sequi illo tenetur? Asperiores fuga natus corrupti provident autem porro temporibus non illo.</p>
@@ -41,7 +41,7 @@
              </main>
         </header>
     </div>
-    <div class="about">
+    <div class="about" id="sobreMi">
         <img src="media/about_me.png" alt="about me" class="about-image">
 
     <div class="about-info">
