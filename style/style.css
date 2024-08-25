@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/berlin-sans-fb');
+
+/*configuraciones basicas para la pagina*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height:100%;
+}
+body{
+    background-color: #280a43;
+    min-width: 320px;    
+}
+header{
+    height: 100vh;
+    width: auto;
+    font-family:  "Nunito Sans", sans-serif;
+}
+/*configuraciones logo navbar*/
+.brand img{
+    height: 70px;
+    width: auto;
+    cursor: pointer;
+    transition: 1.3s ease 0s;
+}
+/*configuraciones del navbar*/
+.navbar{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fbb03b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+}
+/*configuraciones botones navbar*/
+.menu{
+    display: flex;
+}
+.menu li {
+    display: inline-block;
+    padding:0 20px;
+}
+.menu a{
+    background-color: #674a95;
+    border-radius: 5px;
+    padding:10px 20px;
+    font-size: 700;
+    color: #eceff1;
+}
+.active{
+    transition: transform 0.3s;
+}
+.active:hover{
+    transform: scale(1.1);
+}
+.menu a:hover{
+    background-color: #41295a;
+    color: #eceff1;
+    transform: scale(1.1);
+}
+.menu-open button{
+    background-color: #674a95;
+    border-radius: 5px;
+    padding:14px 20px;
+    font-size: 700;
+    color: #eceff1;
+    border: none;
+}
+/*Configuracion del inicio*/
+.floating-image {
+    filter: drop-shadow(0px 31px 50px #fbb03b);
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    object-fit: contain
+}
+.main,.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+.info-content,.about-info{
+    width: 40%;
+    height: auto;
+    background-color: #41295a;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px 5px  #674a95;
+    font-size: 20px;
+  }
+  
+.info-title,.about-info h2{
+    margin: 10px;
+    color: #eceff1;
+    text-align: center;
+    background-color: #674a95;
+    border: none;
+    padding: 20px 30px;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 3em;
+}
+.letra1 {
+    color: black;
+    position: relative;
+    z-index: 1;
+}
+.letra2{
+    color: #fbb03b;
+    display: inline-block; 
+    transform: rotate(-5deg);
+}
+
+.info-button{
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbb03b;
+    color: black;
+}
+.info-content p ,
+.about-info p{
+    margin: 20px;
+}
+.info-button{
+    margin: 20px;
+}  
+/*about me*/
+.about{
+    justify-content: space-around;
+}
+.about img{
+    border: 30px solid  #674a95;
+    width: 40%;
+    height: auto;
+    filter: drop-shadow(5px 31px 50px #fbb03b);
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+    object-fit: contain
+}
+/*Nav Querty*/
+@media screen and (min-width: 900px){
+    .menu-open{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px){
+    .menu{
+        display: none;
+    }
+    
+    .menu-open{
+        display: inherit;
+    }
+}
+header a{
+    text-decoration: none;
+    border: none;
+    
+}
+header li{
+    list-style: none;
+}
+header .overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top:0;
+    background-color: black;
+    overflow: hidden;
+    transition: all 1.3s ease 0s;
+}
+header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header .overlay a{
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1;
+}
+header .overlay a:hover ,
+header .overlay a:focus{
+     color: #fbb03b;
+}
+header .overlay .close{
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 65px;
+}
+@media screen  and (max-height:450px){ 
+
+    header .overlay a{
+        font-size: 20px;
+    }
+    header .overlay .close{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+    
+}
+/*Resoponsive Querty*/
+@media(max-width: 1000px){
+    .info-title,.about-info h2{
+        font-size: 2em;
+    }
+}
+@media(max-width: 900px){
+    .info-content,.about-info{
+        font-size: 2vw;
+    }
+    .floating-image,.about img{
+        height: auto;
+        width: 45%;
+    }
+}
+@media(max-width: 750px){
+    .info-content,.about-info{
+        font-size: 2vw;
+    }
+    .floating-image,.about img{
+        height: auto;
+        width: 45%;
+    }
+
+}
+@media(max-width: 620px){
+    header{
+        height: auto;
+    }
+    .main{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   .info-content,.about-info{
+        height: auto;
+        width: 80%;
+    }
+    .floating-image,.about img{
+        height: auto;
+        width: 55%;
+        margin: 80px;
+    }
+    .info-title,.about-info h2{
+        font-size: 5vw;
+    }
+    .info-content,.about-info{
+        font-size: 4vw;
+    }
+  }
+
+  /*floating image transition*/
+@keyframes float {
+0% {
+      transform: translateY(0); /* Posición inicial */
+}
+50% {
+      transform: translateY(-20px); /* Mueve hacia arriba */
+}
+100% {
+      transform: translateY(0); /* Regresa a la posición inicial */
+}
+}
+  
