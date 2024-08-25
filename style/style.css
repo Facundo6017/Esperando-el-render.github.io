@@ -269,6 +269,9 @@ header .overlay .close{
     .info-content,.about-info{
         font-size: 4vw;
     }
+    .about img{
+        border: 10px solid  #674a95;
+    }
   }
 
   /*floating image transition*/
