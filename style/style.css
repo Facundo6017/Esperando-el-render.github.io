@@ -37,7 +37,6 @@ nav{
     background-color:  #fbb03b;
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 nav ul{
     display: flex;
@@ -326,6 +325,9 @@ section{
         height: 30px;
         width: auto;
         margin: 0px 15px;
+    }
+    .slider-content{
+        margin: 0;
     }
     .nav-img{
         display: flex;
