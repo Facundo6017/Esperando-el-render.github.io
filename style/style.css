@@ -7,9 +7,6 @@
     padding: 0;
 
 }
-html {
-    scroll-behavior: smooth;
-}
 .cards{
     align-items: center;
     background-color: #291340; 
@@ -338,9 +335,12 @@ section{
         justify-content: space-between;  
     }
     nav button {
-        display: inherit;
+        display: flex;
     }
     nav button , .nav-img{
         margin: 0px 15px;
+    }
+    .card-header{
+        width: 100%;
     }
 }
