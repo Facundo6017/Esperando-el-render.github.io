@@ -34,7 +34,7 @@ function moveToLeft(){
          slider.style.transition = "none";
          return
     }
-    operacion = operacion - 20;
+    operacion = operacion - widthImg;
     slider.style.transform= `translate(-${operacion}%)`;
     slider.style.transition = "all ease .6s";
 }
