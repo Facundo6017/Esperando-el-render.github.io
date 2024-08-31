@@ -49,34 +49,43 @@ nav a{
     color: #eceff1;
     font-size: 700;
     margin: 5px;
-    padding: 20px;
     padding:10px 20px;
     text-decoration: none;
 }
+nav a:hover{
+    background-color: #3e2d5a;
+}
+nav button{
+     background-color: #674a95;
+    border-radius: 5px;
+    color: #eceff1;
+    font-size: 700;
+    text-decoration: none;
+    border: none;
+    padding:10px 20px;
+    display: none;
+}
 section{
-    border: 1px solid white;
     height: 100vh;
     display: flex;
     justify-content: center;
 }
 .inicio,.sobremi{
-    border: 1px solid;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
 }
 .sobremi-icons {
-    margin: 10px;
-    padding: 20px;
-    height: 50px;
-    width: auto;
-    border: 1px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
 }
 .sobremi-icons img{
     height: 50px;
-    margin: 0px 25px;
     width: auto;
+    margin: 0px 15px;
     box-shadow: 0 8px 16px rgba(149, 56, 255, 0.5);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
@@ -92,7 +101,6 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid white;
     width: 50%;
     height: 100%;
     flex-wrap: wrap;
@@ -102,12 +110,10 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid white;
     width: 50%;
     height: 100%;
 }
-.sobremi-content ,.inicio-content {
-    border: 1px solid yellow;
+.sobremi-content ,.inicio-content{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,17 +149,26 @@ section{
     display:flex ;
     align-items: center;
 }
-.sobremi-content h2,.inicio-content h1{
+.sobremi-content h2,.inicio-content h1,.portafolio-content h2{
     text-align: center;
     padding: 20px;
     background-color: #674a95;
     width: 90%;
     border-radius: 5px;
+    font-family:berlin sans fb;
+    color: #fff;
+    font-size: 1.5em;
 }
 .sobremi-content p,.inicio-content p{
     padding: 20px;
     width: 90%;
     color: #fff;
+}
+.letra-1{
+    color: #000;
+}
+.letra-2{
+    color: #fbb03b;
 }
 .style-content{
     display: flex;
@@ -164,6 +179,66 @@ section{
     padding: 20px;
     border-radius: 5px;
 }
+.portafolio-title{
+    width: 100%;
+}
+.portafolio-title .style-content{
+    width: 100%;
+}
+.portafolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.portafolio-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+.fila-1,.fila-2,.fila-3{
+    display: flex; 
+    width: 50%;
+    height: 30%;
+    justify-content: space-between;
+    padding: 15px;
+}
+.portafolio-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    height: 70%;
+    border-radius: 5px;
+    border: 28px solid #4f327e;
+    background: rgb(251,176,59);background: radial-gradient(circle, rgb(207, 66, 184) 0%, rgb(88, 33, 119) 100%);
+}
+.portafolio-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+}
+.portafolio-article article{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    width: 30%;
+    background-image: url(/media/1.png);
+    border: 10px solid #fbb03b;
+}
+.portafolio-article article h3{
+    padding: 5px;
+    color: #fff
+}
+
 @media (max-width:1000px){
     .inicio,.sobremi{
         flex-direction: column;
