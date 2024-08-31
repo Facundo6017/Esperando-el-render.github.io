@@ -335,13 +335,10 @@ section{
         width: auto;
     }
     nav{
-        justify-content: space-between;  
+        justify-content: space-around;  
     }
     nav button {
         display: flex;
-    }
-    nav button , .nav-img{
-        margin: 0px 15px;
     }
     .card-header{
         width: 100%;
