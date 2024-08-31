@@ -7,6 +7,9 @@
     padding: 0;
 
 }
+body, html {
+    overflow-x: hidden;
+}
 .cards{
     align-items: center;
     background-color: #291340; 
