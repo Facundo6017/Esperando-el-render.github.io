@@ -37,6 +37,7 @@ nav{
     background-color:  #fbb03b;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 nav ul{
     display: flex;
